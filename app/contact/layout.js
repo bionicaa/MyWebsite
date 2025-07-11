@@ -1,10 +1,15 @@
 function contactLayout({ children }) {
   return (
-    <>
-      <div>
-        {children}
-      </div>
-    </>
+    <html lang="en">
+      <head>
+        <title>Contact</title>
+      </head>
+      <body>
+        <div className="content">
+          {children}
+        </div>
+      </body>
+    </html>
   );
 }
 

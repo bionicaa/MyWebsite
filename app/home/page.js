@@ -4,7 +4,6 @@ import styles from '../../styles/home.module.css'
 import Page from '../page';
 import Link from 'next/link';
 
-
 // This is the home page of the application
 function HomePage() {
   return (

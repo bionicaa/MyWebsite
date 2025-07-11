@@ -1,0 +1,58 @@
+.contactContent { 
+    position: fixed;
+    top: 340px;
+    left: 20px;
+    padding: 2rem;
+    background-color: var(--background);
+}
+
+.upworkLink {
+    position: fixed;
+    top: 650px;
+    left: 20px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display:inline-block;
+    background-color: oklch(87.9% 0.169 91.605);
+    color: rgb(0, 0, 0, 1);
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        background-color: oklch(79.5% 0.184 86.047);
+        transition: 1.5s;
+    }
+}
+
+.linkedinLink {
+    position: fixed;
+    top: 650px;
+    left: 190px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display:inline-block;
+    background-color: oklch(78.9% 0.154 211.53);
+    color: rgb(0, 0, 0, 1);
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        background-color: oklch(68.5% 0.169 237.323);
+        transition: 1.5s;
+    }
+}
+
+.githubLink {
+    position: fixed;
+    top: 650px;
+    left: 380px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display:inline-block;
+    background-color: oklch(87.1% 0.15 154.449);
+    color: rgb(0, 0, 0, 1);
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        background-color: oklch(72.3% 0.219 149.579);
+        transition: 1.5s;
+    }
+}
