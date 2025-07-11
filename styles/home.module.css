@@ -1,6 +1,44 @@
-.content{
-    position: relative;
-    font-weight: bold;
-    margin-top: 260px;
+.content{ 
+    position: fixed;
+    top: 340px;
+    left: 280px;
+    padding: 2rem;
+    background-color: var(--background);
+
+}
+
+.profilePic {
+    position: fixed;
+    top: 340px;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow: hidden; /* ensures the image stays within the rounded shape */
+}
+
+.blogPost {
+    font-style: italic;
+    &:hover {
+        color: oklch(85.2% 0.199 91.936);
+        transition: 10ms;
+    }
+}
+
+.downloadContent {
+    position: fixed;
+    top: 715px;
+    left: 20px;
     padding: 0.1rem;
+}
+
+.downloadIcon {
+    position: fixed;
+    top: 715px;
+    left: 530px;
+    align-items: center;
+    transition: filter 2s;
+    display: flex;
+}
+
+.downloadIcon:hover img {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(90%) saturate(2500%) hue-rotate(-10deg) brightness(90%) contrast(110%);
 }

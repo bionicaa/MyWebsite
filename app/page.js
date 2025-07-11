@@ -23,10 +23,12 @@ function Page() {
           </div>
           <Image className='header' src="/images/techInteraction.jpg" alt="displayPic" width={929} height={494} />
         </div>
-        <p className='footer'> 
-          This website was self-built. <br />
-          2025 © Amin Abdi. All rights reserved.
-        </p>
+        <div>
+          <p className='footer'> 
+            This website was self-built. <br />
+            2025 © Amin Abdi. All rights reserved.
+          </p>
+        </div>  
       </body>
     </html>
   );
