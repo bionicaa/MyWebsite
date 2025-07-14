@@ -5,7 +5,7 @@ function contactLayout({ children }) {
         <title>Contact</title>
       </head>
       <body>
-        <div className="content">
+        <div>
           {children}
         </div>
       </body>

@@ -1,16 +1,23 @@
 import React from 'react';
-import Link from 'next/link';
 import Page from '../page';
+import styles from '../../styles/blog.module.css';
+import NavBar from './navBar';
 
-const BlogPage = () => (
-  <>
-    <Page>
-    </Page>
-    <div>
-      <h1>Blog</h1>
-      <p>Welcome to my blog.</p>
-    </div>
-  </>
-);
+function BlogPage() {
+  return (
+    <>
+      <Page>
+      </Page>
+      <NavBar />
+      <div className={styles.blogContent}>
+        <h1><strong>Featured</strong></h1>
+        <p>Welcome to my blog. Here you&apos;ll find a variety of articles and posts on different topics that interest me.</p>
+        <a className={styles.article}>
+          Read more...
+        </a>
+      </div>
+    </>
+  );
+}
 
 export default BlogPage;

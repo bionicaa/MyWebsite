@@ -1,5 +1,3 @@
-import '../../styles/home.module.css';
-
 function homeLayout({ children }) {
   return (
     <html lang="en">
@@ -7,7 +5,7 @@ function homeLayout({ children }) {
         <title>Home Page</title>
       </head>
       <body>
-        <div className="content">
+        <div>
           {children}
         </div>
       </body>

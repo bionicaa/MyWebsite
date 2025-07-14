@@ -1,10 +1,15 @@
 function blogLayout({ children }) {
   return (
-    <>
-      <div>
-        {children}
-      </div>
-    </>
+    <html lang="en">
+      <head>
+        <title>Blog</title>
+      </head>
+      <body>
+        <div>
+          {children}
+        </div>
+      </body>
+    </html>
   );
 }
 

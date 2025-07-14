@@ -1,0 +1,28 @@
+.navBar {
+  top: 320px;
+  left: 0px;
+  background-color: var(--background);
+  text-align: left;
+  position: fixed;
+  color: var(--foreground);
+  padding: 3rem;
+  width: 180px;
+  z-index: 1;
+}
+
+.blogContent {
+  position: relative;
+  top: 313px;
+  left: 170px;
+  padding: 0.5rem;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.article {
+  margin-block: 2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  border-radius: 5px;;
+}
+
