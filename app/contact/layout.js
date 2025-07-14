@@ -2,7 +2,7 @@ function contactLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Contact</title>
+        <title>Contact Page</title>
       </head>
       <body>
         <div>

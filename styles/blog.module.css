@@ -4,14 +4,17 @@
   background-color: var(--background);
   text-align: left;
   position: fixed;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 250px;
   color: var(--foreground);
-  padding: 3rem;
   width: 180px;
   z-index: 1;
 }
 
 .blogContent {
   position: relative;
+  display: block;
   top: 313px;
   left: 170px;
   padding: 0.5rem;
@@ -21,8 +24,9 @@
 
 .article {
   margin-block: 2rem;
+  display: inline-block;
   font-style: italic;
   margin-bottom: 1rem;
-  border-radius: 5px;;
+  border-radius: 5px;
 }
 

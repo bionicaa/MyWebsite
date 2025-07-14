@@ -7,7 +7,7 @@ import styles from '../../styles/contact.module.css';
 
 function ContactPage() {
   return (
-    <>
+    <div>
       <Page>
       </Page>
       <div className={styles.contactContent}>
@@ -28,7 +28,7 @@ function ContactPage() {
       <div className={styles.githubLink}>
         <GithubLink />
       </div>
-    </>
+    </div>
   );
 }
 

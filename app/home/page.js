@@ -7,7 +7,7 @@ import Link from 'next/link';
 // This is the home page of the application
 function HomePage() {
   return (
-    <>
+    <div>
       <Page>
       </Page>
       <div className={styles.profilePic}>
@@ -45,7 +45,7 @@ function HomePage() {
           </a>
         </p>
       </div>
-    </>
+    </div>
   );
 }
 

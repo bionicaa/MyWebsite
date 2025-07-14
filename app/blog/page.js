@@ -5,7 +5,7 @@ import NavBar from './navBar';
 
 function BlogPage() {
   return (
-    <>
+    <div>
       <Page>
       </Page>
       <NavBar />
@@ -16,7 +16,7 @@ function BlogPage() {
           Read more...
         </a>
       </div>
-    </>
+    </div>
   );
 }
 

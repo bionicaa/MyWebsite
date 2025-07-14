@@ -2,7 +2,7 @@ function blogLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Blog</title>
+        <title>Blog Page</title>
       </head>
       <body>
         <div>
