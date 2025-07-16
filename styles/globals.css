@@ -28,11 +28,11 @@ body {
   position: fixed;
   top: 0;
   width: 99%;
-  height: auto;
+  height: 85%;
   margin-top: 50px;
   background-color: rgb(255, 255, 255, 1);
   color: rgb(0, 0, 0, 1);
-  opacity: 0.35;
+  opacity: 0.2;
 }
 
 .containLink {

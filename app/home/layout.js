@@ -5,9 +5,7 @@ function homeLayout({ children }) {
         <title>Home Page</title>
       </head>
       <body>
-        <div>
           {children}
-        </div>
       </body>
     </html>
   );

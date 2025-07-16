@@ -1,14 +1,16 @@
 .content{ 
     position: fixed;
-    top: 340px;
+    top: 60px;
     left: 280px;
-    padding: 2rem;
-    background-color: var(--background);
+    padding: 0.5rem;
+    color: rgba(256, 256, 256, 0.9);
+    background-color: transparent;
 }
 
 .profilePic {
     position: fixed;
-    top: 340px;
+    top: 60px;
+    left: 15px;
     border-radius: 20px;
     object-fit: cover;
     overflow: hidden; /* ensures the image stays within the rounded shape */
@@ -17,7 +19,8 @@
 .blogPost {
     font-style: italic;
     &:hover {
-        color: oklch(85.2% 0.199 91.936);
+        color: white;
+        text-shadow: 1.5px 1.5px 0 rgba(256, 256, 256, 0.5);
         transition: 10ms;
     }
 }
@@ -27,6 +30,8 @@
     top: 715px;
     left: 20px;
     padding: 0.1rem;
+    color: rgba(256, 256, 256, 0.9);
+    background-color: transparent;
 }
 
 .downloadIcon {
@@ -39,5 +44,5 @@
 }
 
 .downloadIcon:hover img {
-    filter: brightness(0) saturate(100%) invert(60%) sepia(90%) saturate(2500%) hue-rotate(-10deg) brightness(90%) contrast(110%);
+    filter: brightness(100%) saturate(100%) invert(0%) sepia(100%) saturate(10%) hue-rotate(10deg) brightness(100%) contrast(100%);
 }

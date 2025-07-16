@@ -16,7 +16,7 @@ function Page() {
             <Image className='links' src="/images/contact.svg" alt="contact" width={35} height={35} />
           </Link>
         </div>
-        <Image className='header' src="/images/techInteraction.jpg" alt="displayPic" width={929} height={494} />
+        <Image className='header' src="/images/beach_header.png" alt="displayPic" width={929} height={494} />
         <div>
           <p className='footer'> 
             This website was self-built. <br />
