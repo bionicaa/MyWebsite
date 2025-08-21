@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../../styles/blog.module.css';
+import styles from 'styles/blog.module.css';
 
 function NavBar() {
   return (
@@ -8,13 +8,17 @@ function NavBar() {
       <p>
         <strong>Categories</strong>
         <br />
-        <Link href="/blog/product">Product</Link>
         <br />
-        <Link href="/blog/technology">Technology</Link>
+        <Link href="/blog/product/product">Product</Link>
         <br />
-        <Link href="/blog/fitness">Fitness</Link>
         <br />
-        <Link href="/blog/travel">Travel</Link>
+        <Link href="/blog/technology/technology">Technology</Link>
+        <br />
+        <br />
+        <Link href="/blog/fitness/fitness">Fitness & Health</Link>
+        <br />
+        <br />
+        <Link href="/blog/travel/travel">Travel & History</Link>
       </p>
     </div>
   );

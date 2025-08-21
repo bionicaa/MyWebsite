@@ -26,7 +26,7 @@ function HomePage() {
           Hi, I&apos;m Amin Abdi <br />
           <br />
           I am a <strong>freelancer</strong> with expertise in <strong>software product management</strong> and <strong>agile project delivery</strong>. <br />
-          Having worked in the tech industry for nearly 6 years under various frameworks, in both engineering and product, I want to share my skills and knowledge to help develop and deliver exciting products. <br />
+          Having worked in the tech industry for nearly 6 years under various frameworks, in both engineering and product, I want to share my skills and knowledge to help develop and deliver exciting products around the world. <br />
           <br />
           I can help you strategise, plan and execute on your software product ideas, with knowledge of cutting edge technologies like AI, Cloud and Web technologies. <br />
           Additionally, I can help drive digital transformation, automate development processes and improve team collaboration through the use of modern tools and methodologies. <br />
@@ -38,9 +38,8 @@ function HomePage() {
         </h2>
         <br />
         <p>
-          I am sharing more of my interests like <strong>Travel, Physical & Mental Wellbeing, Sports and History</strong> <br />
-          to connect further on common interests.<br />
-          So visit my <Link className={styles.blogPost} href="/blog">Blog Page</Link> if you wish to discover more!
+          If you are interested in  <strong>Travel, Physical & Mental Wellbeing, Sports, History</strong> and more like me, <br />
+          I am writing and sharing some content on my <Link className={styles.blogPost} href="/blog">Blog Page</Link>, visit to discover more of my experiences!
         </p>
       </div>
       <div>

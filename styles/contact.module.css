@@ -1,15 +1,17 @@
 .contactContent { 
     position: fixed;
-    top: 340px;
-    left: 20px;
+    top: 50px;
+    justify-content: center;
     padding: 2rem;
-    background-color: var(--background);
+    text-align: left;
+    background-color: transparent;
+    color: white;
 }
 
 .upworkLink {
     position: fixed;
-    top: 650px;
-    left: 20px;
+    top: 220px;
+    left: 37px;
     padding: 0.5rem;
     border-radius: 5px;
     display:inline-block;
@@ -25,8 +27,8 @@
 
 .linkedinLink {
     position: fixed;
-    top: 650px;
-    left: 190px;
+    top: 280px;
+    left: 37px;
     padding: 0.5rem;
     border-radius: 5px;
     display:inline-block;
@@ -42,8 +44,8 @@
 
 .githubLink {
     position: fixed;
-    top: 650px;
-    left: 380px;
+    top: 340px;
+    left: 37px;
     padding: 0.5rem;
     border-radius: 5px;
     display:inline-block;
