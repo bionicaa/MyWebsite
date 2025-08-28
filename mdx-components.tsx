@@ -1,13 +1,17 @@
 export const mdxComponents = {
   h1: (props) => (
-    <h2
+    <h1
       style={{
         fontSize: '2.8rem',
         fontWeight: 700,
         letterSpacing: '-0.03em',
-        margin: '2rem 0 1.2rem 0',
+        marginInline: '0.1rem',
         fontFamily: 'Inter, Arial, Helvetica, sans-serif',
-        color: '#222',
+        color: 'white',
+        borderBottom: '2px solid grey',
+        display: 'inline-block',      // Only as wide as content or width
+        width: 'auto',               // Custom length
+        paddingBottom: '0.3rem',      // Optional: space below text
       }}
       {...props}
     />
@@ -15,11 +19,32 @@ export const mdxComponents = {
   p: (props) => (
     <p
       style={{
-        fontSize: '1.08rem',
+        fontSize: '1.05rem',
         fontFamily: 'Georgia, Times New Roman, Times, serif',
-        color: '#444',
-        margin: '0.7rem 0',
-        lineHeight: 1.7,
+        color: '#ddd',
+        margin: '0.7rem',
+        lineHeight: 1.2,
+      }}
+      {...props}
+    />
+  ),
+  ul: (props) => (
+    <ul
+      style={{
+        paddingLeft: '1.5rem',
+        margin: '0.7rem',
+        listStyleType: 'disc',
+      }}
+      {...props}
+    />
+  ),
+  li: (props) => (
+    <li
+      style={{
+        fontSize: '1.05rem',
+        fontFamily: 'Georgia, Times New Roman, Times, serif',
+        color: '#ddd',
+        marginBottom: '0.25rem',
       }}
       {...props}
     />

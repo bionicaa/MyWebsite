@@ -20,7 +20,7 @@ export default async function BlogPage() {
         <br />
         {featuredArticles.map(article => (
           <div key={article.slug}>
-            <h2>{article.title}</h2>
+            <h2><b><em>{article.title}</em></b></h2>
             <MDXRemote source={article.excerpt} components={mdxComponents} />
             <Link href={`/blog/${article.slug}/${article.slug}`} className="text-white mt-2 inline-block">
               Read more →

@@ -19,8 +19,7 @@ export default async function TravelPage({ params }) {
         <br />
         {article ? (
           <div>
-            <h2>{article.title} </h2>
-            <h3>{article.date}</h3>
+            <h3><em>{article.date}</em></h3>
             <MDXRemote source={article.content} components={mdxComponents} />
           </div>
         ) : (
