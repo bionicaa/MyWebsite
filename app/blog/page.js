@@ -1,14 +1,15 @@
-import React from 'react';
 import Page from '../page';
 import styles from '../../styles/blog.module.css';
 import NavBar from './navBar';
 import { getAll } from '../../lib/articles';
 import Link from 'next/link';
+import { MDXRemote } from 'next-mdx-remote/rsc'; // for Next.js App Router
 
 export default async function BlogPage() {
   const articles = await getAll();
   const featuredArticles = articles.filter(article => article.featured);
-
+  console.log(articles);
+  
   return (
     <div>
       <Page />
@@ -17,14 +18,13 @@ export default async function BlogPage() {
         <h1><strong>Featured</strong></h1>
         <p>Welcome to my blog. Here you&apos;ll find a variety of articles and posts on different topics that interest me.</p>
         {featuredArticles.map(article => (
-          <a key={article.slug} className={styles.article}>
-            <h3 className="text-xl font-semibold">{article.category.toUpperCase()}</h3>
+          <div key={article.slug}>
             <h2>{article.title}</h2>
-            <p className="text-sm mt-2 text-gray-600">{article.excerpt}</p>
-            <Link href={`/blog/${article.category}/${article.slug}`} className="text-blue-600 mt-2 inline-block">
+            <MDXRemote source={article.excerpt} />
+            <Link href={`/blog/${article.category}/${article.slug}`} className="text-white mt-2 inline-block">
               Read more →
             </Link>
-          </a>
+          </div>
         ))}
       </div>
     </div>
