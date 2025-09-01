@@ -23,7 +23,7 @@ export default async function BlogPage() {
             <br />
             <h2><b><em>{article.title}</em></b></h2>
             <MDXRemote source={article.excerpt} components={mdxComponents} />
-            <Link href={`/blog/${article.slug}/${article.slug}`} className="text-white mt-2 inline-block">
+            <Link href={`/blog/${article.category}/${article.category}`} className="text-white mt-2 inline-block">
               Read more →
             </Link>
           </div>

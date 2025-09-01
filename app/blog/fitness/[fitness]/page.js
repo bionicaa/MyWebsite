@@ -5,12 +5,21 @@ import { MDXRemote } from 'next-mdx-remote/rsc'; // for Next.js App Router
 import { getAll } from "@/lib/articles";
 import { mdxComponents } from "@/mdx-components";
 
+// This function tells Next.js which fitness slugs to statically generate
+export async function generateStaticParams() {
+  const articles = await getAll();
+  // Filter articles for the fitness category and return their slugs
+  return articles
+    .filter(a => a.category && a.category.toLowerCase() === "fitness")
+    .map(a => ({ fitness: a.slug }));
+}
+
 export default async function FitnessPage({ params }) {
   const { fitness } = params; // fitness is the slug
   const articles = await getAll();
   // Filter articles by slug
-  const article = articles.filter(a => a.slug && a.slug.toLowerCase() === "fitness");
-  
+  const article = articles.filter(a => a.slug && a.slug.toLowerCase() === fitness.toLowerCase());
+
   return (
     <div>
       <Page />

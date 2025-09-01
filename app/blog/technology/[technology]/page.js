@@ -5,11 +5,21 @@ import { MDXRemote } from 'next-mdx-remote/rsc'; // for Next.js App Router
 import { getAll } from "@/lib/articles";
 import { mdxComponents } from "@/mdx-components";
 
+// This function tells Next.js which technology slugs to statically generate
+export async function generateStaticParams() {
+  const articles = await getAll();
+  // Filter articles for the technology category and return their slugs
+  return articles
+    .filter(a => a.category && a.category.toLowerCase() === "technology")
+    .map(a => ({ technology: a.slug }));
+}
+
 export default async function TechnologyPage({ params }) {
   const { technology } = params; // technology is the slug
   const articles = await getAll();
   // Filter articles by slug
-  const article = articles.filter(a => a.slug && a.slug.toLowerCase() === "technology");
+  const article = articles.filter(a => a.slug && a.slug.toLowerCase() === technology.toLowerCase());
+  
   return (
     <div>
       <Page />
