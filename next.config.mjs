@@ -1,5 +1,15 @@
 import createMDX from '@next/mdx'
- 
+
+// next.config.js
+const isProd = process.env.NODE_ENV === 'production';
+
+module.exports = {
+  output: 'export', // important for GitHub Pages
+  basePath: isProd ? '/MyWebsite' : '',
+  assetPrefix: isProd ? '/MyWebsite/' : '',
+};
+
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Configure `pageExtensions` to include markdown and MDX files
