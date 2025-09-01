@@ -9,9 +9,11 @@ import { mdxComponents } from "@/mdx-components";
 export async function generateStaticParams() {
   const articles = await getAll();
   // Filter articles for the fitness category and return their slugs
-  return articles
+  const params = articles
     .filter(a => a.category && a.category.toLowerCase() === "fitness")
     .map(a => ({ fitness: a.slug }));
+  // Always return at least one param for static export
+  return params.length > 0 ? params : [{ fitness: "no-articles" }];
 }
 
 export default async function FitnessPage({ params }) {
@@ -27,7 +29,7 @@ export default async function FitnessPage({ params }) {
       <div className={styles.blogContent}>
         <h1><strong>Fitness & Health</strong></h1>
         <br />
-        {article.length > 0 ? (
+        {fitness !== "no-articles" ? (
           article.map(article => (
             <div key={article.slug}>
               <br />

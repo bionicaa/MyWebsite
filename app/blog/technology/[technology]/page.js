@@ -8,18 +8,18 @@ import { mdxComponents } from "@/mdx-components";
 // This function tells Next.js which technology slugs to statically generate
 export async function generateStaticParams() {
   const articles = await getAll();
-  // Filter articles for the technology category and return their slugs
-  return articles
+  const params = articles
     .filter(a => a.category && a.category.toLowerCase() === "technology")
     .map(a => ({ technology: a.slug }));
-}
+  // Always return at least one param for static export
+  return params.length > 0 ? params : [{ technology: "no-articles" }];
+} 
 
 export default async function TechnologyPage({ params }) {
   const { technology } = params; // technology is the slug
   const articles = await getAll();
   // Filter articles by slug
   const article = articles.filter(a => a.slug && a.slug.toLowerCase() === technology.toLowerCase());
-  
   return (
     <div>
       <Page />
@@ -27,7 +27,7 @@ export default async function TechnologyPage({ params }) {
       <div className={styles.blogContent}>
         <h1><strong>Technology</strong></h1>
         <br />
-        {article.length > 0 ? (
+        {technology !== "no-articles" ? (
             article.map(article => (
               <div key={article.slug}>
                 <br />

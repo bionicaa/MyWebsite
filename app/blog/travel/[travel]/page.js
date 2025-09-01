@@ -9,9 +9,11 @@ import { mdxComponents } from "@/mdx-components";
 export async function generateStaticParams() {
   const articles = await getAll();
   // Filter articles for the travel category and return their slugs
-  return articles
+  const params = articles
     .filter(a => a.category && a.category.toLowerCase() === "travel")
     .map(a => ({ travel: a.slug }));
+  // Always return at least one param for static export
+  return params.length > 0 ? params : [{ travel: "no-articles" }];
 }
 
 export default async function TravelPage({ params }) {
@@ -26,7 +28,7 @@ export default async function TravelPage({ params }) {
       <div className={styles.blogContent}>
         <h1><strong>Travel & History</strong></h1>
         <br />
-        {article.length > 0 ? (
+        {travel !== "no-articles" ? (
           <div>
             {article.map(article => (
               <div key={article.slug}>
