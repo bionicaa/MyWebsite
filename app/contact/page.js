@@ -1,15 +1,13 @@
-import React from 'react';
 import UpworkLink from './UpworkLink'; 
 import LinkedinLink from './LinkedinLink'; 
 import GithubLink from './GithubLink';
-import Page from '../page';
+import Page from '@/lib/page.jsx';
 import styles from '../../styles/contact.module.css';
 
 function ContactPage() {
   return (
     <div>
-      <Page>
-      </Page>
+      <Page />
       <div className={styles.contactContent}>
         <h1><strong>Contact Information</strong></h1>
         <p>

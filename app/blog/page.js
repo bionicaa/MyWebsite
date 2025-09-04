@@ -1,7 +1,7 @@
-import Page from '../page';
+import Page from '@/lib/page.jsx';
 import styles from '../../styles/blog.module.css';
 import NavBar from './navBar';
-import { getAll } from '../../lib/articles';
+import { getAll } from '@/lib/articles';
 import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote/rsc'; // for Next.js App Router
 import { mdxComponents } from '@/mdx-components';

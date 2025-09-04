@@ -1,4 +1,4 @@
-import Page from "@/app/page";
+import Page from "@/lib/page.jsx";
 import NavBar from "../../navBar";
 import styles from "styles/blog.module.css";
 import { getAll } from "@/lib/articles";
