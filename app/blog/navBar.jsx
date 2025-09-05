@@ -9,16 +9,16 @@ function NavBar() {
         <strong>Categories</strong>
         <br />
         <br />
-        <Link href="/blog/product/product">Product</Link>
+        <Link href="/blog/product">Product</Link>
         <br />
         <br />
-        <Link href="/blog/technology/technology">Technology</Link>
+        <Link href="/blog/technology">Technology</Link>
         <br />
         <br />
-        <Link href="/blog/fitness/fitness">Fitness & Health</Link>
+        <Link href="/blog/fitness">Fitness & Health</Link>
         <br />
         <br />
-        <Link href="/blog/travel/travel">Travel & History</Link>
+        <Link href="/blog/travel">Travel & History</Link>
       </p>
     </div>
   );

@@ -1,5 +1,5 @@
 import Page from "@/lib/page.jsx";
-import NavBar from "../../navBar";
+import NavBar from "../navBar";
 import styles from "styles/blog.module.css";
 import { MDXRemote } from 'next-mdx-remote/rsc'; // for Next.js App Router
 import { getAll } from "@/lib/articles";
@@ -20,7 +20,7 @@ export default async function FitnessPage({ params }) {
   const { fitness } = params; // fitness is the slug
   const articles = await getAll();
   // Filter articles by slug
-  const article = articles.filter(a => a.slug && a.slug.toLowerCase() === fitness.toLowerCase());
+  const article = articles.filter(a => a.category && a.category.toLowerCase() === "fitness");
 
   return (
     <div>
@@ -29,7 +29,7 @@ export default async function FitnessPage({ params }) {
       <div className={styles.blogContent}>
         <h1><strong>Fitness & Health</strong></h1>
         <br />
-        {fitness !== "no-articles" ? (
+        {article.length > 0 ? (
           article.map(article => (
             <div key={article.slug}>
               <br />
