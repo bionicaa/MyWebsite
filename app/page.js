@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import styles from "../styles/app.module.css";
-import Page from '../lib/page.jsx';
+import Base from './base.jsx';
 import Link from 'next/link';
 
 // This is the home page of the application
 function HomePage() {
   return (
     <div>
-      <Page />
+      <Base />
       <div className={styles.profilePic}>
         <Image
           src="/images/profile-pic.jpg"

@@ -1,13 +1,13 @@
 import UpworkLink from './UpworkLink'; 
 import LinkedinLink from './LinkedinLink'; 
 import GithubLink from './GithubLink';
-import Page from '@/lib/page.jsx';
+import Base from '@/app/base.jsx';
 import styles from '../../styles/contact.module.css';
 
 function ContactPage() {
   return (
     <div>
-      <Page />
+      <Base />
       <div className={styles.contactContent}>
         <h1><strong>Contact Information</strong></h1>
         <p>
@@ -26,7 +26,7 @@ function ContactPage() {
       <div className={styles.githubLink}>
         <GithubLink />
       </div>
-      <div style={{ margin: '26rem 0', marginLeft: '2rem' }}>
+      <div style={{ margin: '26rem 0', marginLeft: '1.8rem', marginRight: '1.8rem' }}>
         <h2>My Location</h2>
           <iframe
             title="My Location"

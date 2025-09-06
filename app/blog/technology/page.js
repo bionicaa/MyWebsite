@@ -1,4 +1,4 @@
-import Page from "@/lib/page.jsx";
+import Base from "@/app/base.jsx";
 import NavBar from "../navBar";
 import styles from "styles/blog.module.css";
 import { MDXRemote } from 'next-mdx-remote/rsc'; // for Next.js App Router
@@ -22,7 +22,7 @@ export default async function TechnologyPage({ params }) {
   const article = articles.filter(a => a.category && a.category.toLowerCase() === "technology");
   return (
     <div>
-      <Page />
+      <Base />
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Technology</strong></h1>

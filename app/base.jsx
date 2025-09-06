@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import 'styles/globals.css';
 
-function Page() {
+function Base() {
   return (
       <div className='container'>
         <div className='links-row'>
@@ -26,4 +27,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default Base;

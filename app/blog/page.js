@@ -1,4 +1,4 @@
-import Page from '@/lib/page.jsx';
+import Base from '@/app/base.jsx';
 import styles from '../../styles/blog.module.css';
 import NavBar from './navBar';
 import { getAll } from '@/lib/articles';
@@ -12,7 +12,7 @@ export default async function BlogPage() {
   
   return (
     <div>
-      <Page />
+      <Base />
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Featured</strong></h1>

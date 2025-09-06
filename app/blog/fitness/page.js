@@ -1,4 +1,4 @@
-import Page from "@/lib/page.jsx";
+import Base from "@/app/base.jsx";
 import NavBar from "../navBar";
 import styles from "styles/blog.module.css";
 import { MDXRemote } from 'next-mdx-remote/rsc'; // for Next.js App Router
@@ -24,7 +24,7 @@ export default async function FitnessPage({ params }) {
 
   return (
     <div>
-      <Page />
+      <Base />
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Fitness & Health</strong></h1>

@@ -1,4 +1,4 @@
-import Page from "@/lib/page.jsx";
+import Base from "@/app/base.jsx";
 import NavBar from "../navBar";
 import styles from "styles/blog.module.css";
 import { getAll } from "@/lib/articles";
@@ -24,7 +24,7 @@ export default async function ProductPage({ params }) {
 
   return (
     <div>
-      <Page />
+      <Base />
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Product</strong></h1>
