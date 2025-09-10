@@ -1,7 +1,8 @@
-import Image from 'next/image'
 import styles from "../styles/app.module.css";
 import Base from './base.jsx';
 import Link from 'next/link';
+import ProfilePic from 'public/images/profile-pic.jpg';
+import DownloadIcon from 'public/images/download.svg';
 
 // This is the home page of the application
 function HomePage() {
@@ -9,12 +10,7 @@ function HomePage() {
     <div>
       <Base />
       <div className={styles.profilePic}>
-        <Image
-          src="/images/profile-pic.jpg"
-          alt="Profile Picture"
-          width={248}
-          height={252}
-        />
+        <ProfilePic className="w-248 h-252"/>
       </div>
       <div className={styles.content}>
         <h1>
@@ -44,7 +40,7 @@ function HomePage() {
         <p className={styles.downloadContent}>
           Download my CV or visit the <Link className={styles.blogPost} href="/contact">Contact Page</Link> if you wish to work together.
           <a className={styles.downloadIcon} href="/CV_ABDI_Amin.pdf" download>
-            <Image src='/images/download.svg' alt='CV' width={30} height={30} />
+            <DownloadIcon className="w-30 h-30" />
           </a>
         </p>
       </div>
