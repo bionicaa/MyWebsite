@@ -1,16 +1,22 @@
 import styles from "../styles/app.module.css";
 import Base from './base.jsx';
 import Link from 'next/link';
-import ProfilePic from 'public/images/profile-pic.jpg';
-import DownloadIcon from 'public/images/download.svg';
+import Image from 'next/image';
 
 // This is the home page of the application
 function HomePage() {
+  const prefix = '/MyWebsite';
   return (
     <div>
       <Base />
       <div className={styles.profilePic}>
-        <ProfilePic className="w-248 h-252"/>
+        <Image
+          src={`${prefix}/images/profile-pic.jpg`}
+          alt="Profile Picture"
+          width={248}
+          height={252}
+        />
+        {console.log(`${prefix}/images/profile-pic.jpg`)}
       </div>
       <div className={styles.content}>
         <h1>
@@ -39,8 +45,8 @@ function HomePage() {
       <div>
         <p className={styles.downloadContent}>
           Download my CV or visit the <Link className={styles.blogPost} href="/contact">Contact Page</Link> if you wish to work together.
-          <a className={styles.downloadIcon} href="/CV_ABDI_Amin.pdf" download>
-            <DownloadIcon className="w-30 h-30" />
+          <a className={styles.downloadIcon} href={`${prefix}/CV_ABDI_Amin.pdf`} download>
+            <Image src={`${prefix}/images/download.svg`} alt='CV' width={30} height={30} />
           </a>
         </p>
       </div>
