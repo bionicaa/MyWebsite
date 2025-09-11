@@ -6,8 +6,8 @@ const isProd = process.env.NODE_ENV === 'production';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export', // important for GitHub Pages
-  basePath: isProd ? '/MyWebsite' : '',
-  assetPrefix: isProd ? '/MyWebsite/' : '',
+  basePath: isProd ? '/' : '',
+  assetPrefix: isProd ? '/' : '',
   images: {
     unoptimized: true,
   },
