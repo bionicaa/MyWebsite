@@ -1,9 +1,10 @@
 .content{ 
-    position: fixed;
+    position: relative;
     top: 60px;
     left: 280px;
     padding: 0.5rem;
-    margin-right: 2rem;
+    margin-right: 10rem;
+    padding-right: 10rem;
     color: rgba(256, 256, 256, 0.9);
     background-color: transparent;
 }
@@ -28,7 +29,7 @@
 
 .downloadContent {
     position: fixed;
-    top: 715px;
+    top: 560px;
     left: 20px;
     padding: 0.1rem;
     color: rgba(256, 256, 256, 0.9);
@@ -37,7 +38,7 @@
 
 .downloadIcon {
     position: fixed;
-    top: 715px;
+    top: 560px;
     left: 530px;
     align-items: center;
     transition: filter 2s;
