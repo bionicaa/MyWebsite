@@ -24,10 +24,10 @@ export const mdxComponents = {
         fontSize: '1.05rem',
         fontFamily: 'Georgia, Times New Roman, Times, serif',
         color: '#ddd',
-        margin: '1.5rem',
+        margin: '1rem',
         marginRight: '10rem',
         paddingRight: '10rem',
-        paddingBottom: '4rem',
+        marginBottom: '3rem',
         lineHeight: 1.2,
       }}
       {...props}
