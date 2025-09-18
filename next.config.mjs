@@ -11,9 +11,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? '' : '',
-  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
