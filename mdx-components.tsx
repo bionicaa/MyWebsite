@@ -11,9 +11,9 @@ export const mdxComponents = {
         borderBottom: '2px solid grey',
         display: 'inline-block',      // Only as wide as content or width
         width: 'auto',               // Custom length
-        marginRight: '5rem',
-        paddingRight: '5rem',        // Space between text and border
-        paddingBottom: '0.3rem',      // Optional: space below text
+        marginRight: '10rem',
+        paddingRight: '10rem',        // Space between text and border
+        paddingBottom: '4rem',      // Optional: space below text
       }}
       {...props}
     />
@@ -24,9 +24,9 @@ export const mdxComponents = {
         fontSize: '1.05rem',
         fontFamily: 'Georgia, Times New Roman, Times, serif',
         color: '#ddd',
-        margin: '0.7rem',
-        marginRight: '5rem',
-        paddingRight: '5rem',
+        margin: '1.5rem',
+        marginRight: '10rem',
+        paddingRight: '10rem',
         lineHeight: 1.2,
       }}
       {...props}
@@ -53,13 +53,4 @@ export const mdxComponents = {
       {...props}
     />
   ),
-  img: (props) => (
-    <img
-      style={{
-        padding: '1rem',
-        display: 'inline-block',
-      }}
-      {...props}
-    />
-  )
 };
