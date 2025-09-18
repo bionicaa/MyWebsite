@@ -24,7 +24,7 @@ export const mdxComponents = {
         fontSize: '1.05rem',
         fontFamily: 'Georgia, Times New Roman, Times, serif',
         color: '#ddd',
-        margin: '2.5rem',
+        marginBottom: '3.3rem',
         marginRight: '10rem',
         paddingRight: '10rem',
         lineHeight: 1.2,
