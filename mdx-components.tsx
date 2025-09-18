@@ -54,10 +54,7 @@ export const mdxComponents = {
   img: (props) => (
     <img
       style={{
-        maxWidth: '100%',
-        height: 'auto',
-        borderRadius: '0.5rem',
-        margin: '1rem 0',
+        padding: '1rem',
         display: 'inline-block',
       }}
       {...props}
