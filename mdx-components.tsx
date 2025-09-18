@@ -13,7 +13,7 @@ export const mdxComponents = {
         width: 'auto',               // Custom length
         marginRight: '10rem',
         paddingRight: '10rem',        // Space between text and border
-        paddingBottom: '4rem',      // Optional: space below text
+        paddingBottom: '0.7rem',      // Optional: space below text
       }}
       {...props}
     />
@@ -27,6 +27,7 @@ export const mdxComponents = {
         margin: '1.5rem',
         marginRight: '10rem',
         paddingRight: '10rem',
+        paddingBottom: '4rem',
         lineHeight: 1.2,
       }}
       {...props}
