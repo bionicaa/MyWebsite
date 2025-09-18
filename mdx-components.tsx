@@ -11,6 +11,7 @@ export const mdxComponents = {
         borderBottom: '2px solid grey',
         display: 'inline-block',      // Only as wide as content or width
         width: 'auto',               // Custom length
+        marginRight: '2.5rem',
         paddingBottom: '0.3rem',      // Optional: space below text
       }}
       {...props}
@@ -23,6 +24,7 @@ export const mdxComponents = {
         fontFamily: 'Georgia, Times New Roman, Times, serif',
         color: '#ddd',
         margin: '0.7rem',
+        marginRight: '2.5rem',
         lineHeight: 1.2,
       }}
       {...props}
@@ -49,4 +51,16 @@ export const mdxComponents = {
       {...props}
     />
   ),
+  img: (props) => (
+    <img
+      style={{
+        maxWidth: '100%',
+        height: 'auto',
+        borderRadius: '0.5rem',
+        margin: '1rem 0',
+        display: 'inline-block',
+      }}
+      {...props}
+    />
+  )
 };
