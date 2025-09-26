@@ -6,7 +6,7 @@ import styles from '../../styles/contact.module.css';
 
 function ContactPage() {
   return (
-    <div>
+    <><div>
       <div className={styles.contactContent}>
         <h1><strong>Contact Information</strong></h1>
         <p>
@@ -27,19 +27,18 @@ function ContactPage() {
       </div>
       <div style={{ margin: '26rem 0', marginLeft: '1.8rem', marginRight: '1.8rem' }}>
         <h2>My Location</h2>
-          <iframe
-            title="My Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.057522585!2d-0.510375!3d51.286893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760fd7e5b4c7c3%3A0x7c6e8c6e8c6e8c6e!2sLondon!5e0!3m2!1sen!2suk!4v1690000000000!5m2!1sen!2suk"
-            width="100%"
-            height="300"
-            style={{ border: 0, borderRadius: '10px' }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <iframe
+          title="My Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.057522585!2d-0.510375!3d51.286893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760fd7e5b4c7c3%3A0x7c6e8c6e8c6e8c6e!2sLondon!5e0!3m2!1sen!2suk!4v1690000000000!5m2!1sen!2suk"
+          width="100%"
+          height="300"
+          style={{ border: 0, borderRadius: '10px' }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-      <Base />
-    </div>
+    </div><Base /></>
   );
 }
 

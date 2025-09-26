@@ -23,7 +23,7 @@ export default async function ProductPage({ params }) {
   const article = articles.filter(a => a.category && a.category.toLowerCase() === "product");
 
   return (
-    <div>
+    <><div>
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Product</strong></h1>
@@ -35,11 +35,10 @@ export default async function ProductPage({ params }) {
               <h3><em>{article.date}</em></h3>
               <MDXRemote source={article.content} components={mdxComponents} />
             </div>
-        ))) : (
+          ))) : (
           <p>No articles found.</p>
         )}
       </div>
-      <Base />
-    </div>
+    </div><Base /></>
   );
 }

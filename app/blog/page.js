@@ -11,7 +11,7 @@ export default async function BlogPage() {
   const featuredArticles = articles.filter(article => article.featured);
   
   return (
-    <div>
+    <><div>
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Featured</strong></h1>
@@ -28,7 +28,6 @@ export default async function BlogPage() {
           </div>
         ))}
       </div>
-      <Base />
-    </div>
+    </div><Base /></>
   );
 }

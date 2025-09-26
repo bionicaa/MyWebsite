@@ -21,24 +21,23 @@ export default async function TechnologyPage({ params }) {
   // Filter articles by slug
   const article = articles.filter(a => a.category && a.category.toLowerCase() === "technology");
   return (
-    <div>
+    <><div>
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Technology</strong></h1>
         <br />
         {article.length > 0 ? (
-            article.map(article => (
-              <div key={article.slug}>
-                <br />
-                <h3><em>{article.date}</em></h3>
-                <MDXRemote source={article.content} components={mdxComponents} />
-              </div>
-            ))
+          article.map(article => (
+            <div key={article.slug}>
+              <br />
+              <h3><em>{article.date}</em></h3>
+              <MDXRemote source={article.content} components={mdxComponents} />
+            </div>
+          ))
         ) : (
           <p>No articles found.</p>
         )}
       </div>
-      <Base />
-    </div>
+    </div><Base /></>
   );
 }

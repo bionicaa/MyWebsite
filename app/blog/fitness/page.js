@@ -23,7 +23,7 @@ export default async function FitnessPage({ params }) {
   const article = articles.filter(a => a.category && a.category.toLowerCase() === "fitness");
 
   return (
-    <div>
+    <><div>
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Fitness & Health</strong></h1>
@@ -40,7 +40,6 @@ export default async function FitnessPage({ params }) {
           <p>No articles found.</p>
         )}
       </div>
-      <Base />
-    </div>
+    </div><Base /></>
   );
 }
