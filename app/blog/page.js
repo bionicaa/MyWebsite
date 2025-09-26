@@ -12,7 +12,6 @@ export default async function BlogPage() {
   
   return (
     <div>
-      <Base />
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Featured</strong></h1>
@@ -29,6 +28,7 @@ export default async function BlogPage() {
           </div>
         ))}
       </div>
+      <Base />
     </div>
   );
 }

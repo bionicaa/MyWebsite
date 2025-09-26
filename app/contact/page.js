@@ -7,7 +7,6 @@ import styles from '../../styles/contact.module.css';
 function ContactPage() {
   return (
     <div>
-      <Base />
       <div className={styles.contactContent}>
         <h1><strong>Contact Information</strong></h1>
         <p>
@@ -39,6 +38,7 @@ function ContactPage() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
       </div>
+      <Base />
     </div>
   );
 }

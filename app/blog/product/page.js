@@ -24,7 +24,6 @@ export default async function ProductPage({ params }) {
 
   return (
     <div>
-      <Base />
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Product</strong></h1>
@@ -40,6 +39,7 @@ export default async function ProductPage({ params }) {
           <p>No articles found.</p>
         )}
       </div>
+      <Base />
     </div>
   );
 }

@@ -23,7 +23,6 @@ export default async function TravelPage({ params }) {
   const article = articles.filter(a => a.category && a.category.toLowerCase() === "travel");
   return (
     <div>
-      <Base />
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Travel & History</strong></h1>
@@ -39,6 +38,7 @@ export default async function TravelPage({ params }) {
           <p>No articles found.</p>
         )}
       </div>
+      <Base />
     </div>
   );
 }

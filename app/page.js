@@ -7,7 +7,6 @@ import Image from 'next/image';
 function HomePage() {
   return (
     <div>
-      <Base />
       <div className={styles.profilePic}>
         <Image
           src={`/images/profile-pic.jpg`}
@@ -48,6 +47,7 @@ function HomePage() {
           </a>
         </p>
       </div>
+      <Base />
     </div>
   );
 }

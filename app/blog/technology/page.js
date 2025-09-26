@@ -22,7 +22,6 @@ export default async function TechnologyPage({ params }) {
   const article = articles.filter(a => a.category && a.category.toLowerCase() === "technology");
   return (
     <div>
-      <Base />
       <NavBar />
       <div className={styles.blogContent}>
         <h1><strong>Technology</strong></h1>
@@ -39,6 +38,7 @@ export default async function TechnologyPage({ params }) {
           <p>No articles found.</p>
         )}
       </div>
+      <Base />
     </div>
   );
 }
