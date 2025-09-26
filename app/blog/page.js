@@ -11,23 +11,26 @@ export default async function BlogPage() {
   const featuredArticles = articles.filter(article => article.featured);
   
   return (
-    <><div>
-      <NavBar />
-      <div className={styles.blogContent}>
-        <h1><strong>Featured</strong></h1>
-        <p>Welcome to my blog. Here you&apos;ll find a variety of articles and posts on different topics that interest me.</p>
-        <br />
-        {featuredArticles.map(article => (
-          <div key={article.slug}>
-            <br />
-            <h2><b><em>{article.title}</em></b></h2>
-            <MDXRemote source={article.excerpt} components={mdxComponents} />
-            <Link href={`/blog/${article.category}`} className="text-white mt-2 inline-block">
-              Read more →
-            </Link>
-          </div>
-        ))}
+    <div className={styles.pageContainer}>
+      <Base />
+      <div className={styles.contentOverlay}>
+        <NavBar />
+        <div className={styles.blogContent}>
+          <h1><strong>Featured</strong></h1>
+          <p>Welcome to my blog. Here you&apos;ll find a variety of articles and posts on different topics that interest me.</p>
+          <br />
+          {featuredArticles.map(article => (
+            <div key={article.slug}>
+              <br />
+              <h2><b><em>{article.title}</em></b></h2>
+              <MDXRemote source={article.excerpt} components={mdxComponents} />
+              <Link href={`/blog/${article.category}`} className="text-white mt-2 inline-block">
+                Read more →
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
-    </div><Base /></>
+    </div>
   );
 }

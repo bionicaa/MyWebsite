@@ -23,22 +23,25 @@ export default async function ProductPage({ params }) {
   const article = articles.filter(a => a.category && a.category.toLowerCase() === "product");
 
   return (
-    <><div>
-      <NavBar />
-      <div className={styles.blogContent}>
-        <h1><strong>Product</strong></h1>
-        <br />
-        {article.length > 0 ? (
-          article.map(article => (
-            <div key={article.slug}>
-              <br />
-              <h3><em>{article.date}</em></h3>
-              <MDXRemote source={article.content} components={mdxComponents} />
-            </div>
-          ))) : (
-          <p>No articles found.</p>
-        )}
+    <div className={styles.pageContainer}>
+      <Base />
+      <div className={styles.contentOverlay}>
+        <NavBar />
+        <div className={styles.blogContent}>
+          <h1><strong>Product</strong></h1>
+          <br />
+          {article.length > 0 ? (
+            article.map(article => (
+              <div key={article.slug}>
+                <br />
+                <h3><em>{article.date}</em></h3>
+                <MDXRemote source={article.content} components={mdxComponents} />
+              </div>
+            ))) : (
+            <p>No articles found.</p>
+          )}
+        </div>
       </div>
-    </div><Base /></>
+    </div>
   );
 }

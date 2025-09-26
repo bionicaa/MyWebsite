@@ -53,16 +53,4 @@ export const mdxComponents = {
       {...props}
     />
   ),
-  img: (props) => (
-    <img
-      {...props}
-      style={{
-        opacity: 0.9,
-        borderRadius: '8px',
-        marginBottom: '1rem',
-        
-        ...props.style,
-      }}
-    />
-  ),
 };

@@ -23,12 +23,14 @@ export default async function FitnessPage({ params }) {
   const article = articles.filter(a => a.category && a.category.toLowerCase() === "fitness");
 
   return (
-    <><div>
-      <NavBar />
-      <div className={styles.blogContent}>
-        <h1><strong>Fitness & Health</strong></h1>
-        <br />
-        {article.length > 0 ? (
+    <div className={styles.pageContainer}>
+      <Base />
+      <div className={styles.contentOverlay}>
+        <NavBar />
+        <div className={styles.blogContent}>
+          <h1><strong>Fitness & Health</strong></h1>
+          <br />
+          {article.length > 0 ? (
           article.map(article => (
             <div key={article.slug}>
               <br />
@@ -39,7 +41,8 @@ export default async function FitnessPage({ params }) {
         ) : (
           <p>No articles found.</p>
         )}
+        </div>
       </div>
-    </div><Base /></>
+    </div>
   );
 }

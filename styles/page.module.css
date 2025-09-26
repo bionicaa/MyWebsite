@@ -1,0 +1,18 @@
+.pageContainer {
+  position: relative;
+  width: 100%;
+}
+
+.contentOverlay {
+  position: relative;
+  z-index: 2;
+  /* Add padding or margin as needed */
+}
+
+.container { /* Base component container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
