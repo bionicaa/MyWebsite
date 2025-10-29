@@ -18,9 +18,11 @@ function ContactPage() {
             <strong>Phone:</strong> <a href="tel:+447580127981"> +44 7580 127981</a> <br />
           </p>
         </div>
+        {/*
         <div className={styles.upworkLink}>
           <UpworkLink />
         </div>
+        */}
         <div className={styles.linkedinLink}>
           <LinkedinLink />
         </div>
