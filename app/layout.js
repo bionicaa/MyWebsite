@@ -6,12 +6,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>{}</head>
       <body>
-        {/* If you're using GTM (not just gtag), include the noscript iframe here:
-            <noscript>
-              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX"
+        {<noscript>
+              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XPGWWCFLCE"
                       height="0" width="0" style={{display:'none',visibility:'hidden'}} />
             </noscript>
-         */}
+         }
         {children}
       </body>
     </html>
