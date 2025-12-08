@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* load gtag.js in the head at SSR time */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XPGWWCFLCE"
+          async src="https://www.googletagmanager.com/gtag/js?id=G-XPGWWCFLCE"
           strategy="beforeInteractive"
         />
         {/* inline config also in head at SSR time */}
