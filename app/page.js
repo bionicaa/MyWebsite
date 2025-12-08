@@ -23,13 +23,13 @@ function HomePage() {
             <strong>A little about me...</strong>
           </h1>
           <p>
-            Hi, I&apos;m Amin Abdi <br />
+            Hi, my name is Amin Abdi <br />
             <br />
-            I am a <strong>freelancer</strong> with expertise in <strong>software product management</strong> and <strong>agile project delivery</strong>. <br />
-            Having worked in the tech industry for nearly 6 years under various frameworks, in both engineering and product, I want to share my skills and knowledge to help develop and deliver exciting products around the world. <br />
+            I am a <strong>technical product development specialist</strong> with expertise in <strong>software product management</strong> and <strong>agile project delivery</strong>. <br />
+            Having worked in the tech industry for over 7 years under various frameworks, in both engineering and product, I want to share my skills and knowledge to help develop and deliver exciting products around the world. <br />
             <br />
             I can help you strategise, plan and execute on your software product ideas, with knowledge of cutting edge technologies like AI, Cloud and Web technologies. <br />
-            Additionally, I can help drive digital transformation, automate development processes and improve team collaboration through the use of modern tools and methodologies. <br />
+            Additionally, I can help with change management, automating operations and improving team engagement & output velocity through the use of modern tools and methodologies. <br />
             <br />
             <br />
           </p>
@@ -38,8 +38,11 @@ function HomePage() {
           </h2>
           <br />
           <p>
-            If you are interested in  <strong>Travel, Physical & Mental Wellbeing, Sports, History</strong> and more like me, <br />
-            I am writing and sharing some content on my <Link className={styles.blogPost} href="/blog">Blog Page</Link>, visit to discover more of my experiences!
+            I am also a fitness fanatic with over 10 years of experience training in various martial arts and optimizing physical & mental wellbeing. <br />
+            When I am not working, you can find me either at the gym, outdoors exploring new places, or reading about history and different cultures. This is because I love to travel and have visited over 25 countries so far!<br />
+            <br />
+            If you are interested in  <strong>Personal Development, Travel, Physical & Mental Wellbeing, Sports, History, Technology</strong> and more like me, <br />
+            I am writing and sharing some content on my <Link className={styles.blogPost} href="/blog">Blog Page</Link> and would love you to check it out!
           </p>
         </div>
         <div>
