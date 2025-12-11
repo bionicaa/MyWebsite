@@ -8,6 +8,9 @@ function NavBar() {
         <strong>Categories</strong>
         <br />
         <br />
+        <Link href="/blog/personal%20dev">Personal Development</Link>
+        <br />
+        <br />
         <Link href="/blog/product">Product</Link>
         <br />
         <br />
