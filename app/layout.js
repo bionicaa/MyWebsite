@@ -1,15 +1,12 @@
-// ...existing code...
-import Script from 'next/script';
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>{}</head>
+      <head />
       <body>
-        {<noscript>
+        {/*<noscript>
               <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XPGWWCFLCE"
                       height="0" width="0" style={{display:'none',visibility:'hidden'}} />
-            </noscript>
+            </noscript>*/
          }
         {children}
       </body>
