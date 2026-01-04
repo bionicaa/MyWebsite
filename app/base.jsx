@@ -9,9 +9,9 @@ function Base() {
           <Link className='containLink' href="/">
             <Image className='links' src={`/images/home.svg`} alt="home" width={35} height={35} />
           </Link>
-          <Link className='containLink' href="/blog">
+          {/*{<Link className='containLink' href="/blog">
             <Image className='links' src={`/images/blog.svg`} alt="blog" width={35} height={35} />
-          </Link>
+          </Link>}*/}
           <Link className='containLink' href="/contact">
             <Image className='links' src={`/images/contact.svg`} alt="contact" width={35} height={35} />
           </Link>
@@ -26,5 +26,6 @@ function Base() {
       </div>
   );
 }
+
 
 export default Base;

@@ -33,7 +33,7 @@ function HomePage() {
             <br />
             <br />
           </p>
-          <h2>
+          {/*<h2>
             <strong>But that&apos;s not all I do...</strong>
           </h2>
           <br />
@@ -43,7 +43,7 @@ function HomePage() {
             <br />
             If you are interested in  <strong>Personal Development, Travel, Physical & Mental Wellbeing, Sports, History, Technology</strong> and more like me, <br />
             I am writing and sharing some content on my <Link className={styles.blogPost} href="/blog">Blog Page</Link> and would love you to check it out!
-          </p>
+          </p>*/}
         </div>
         <div>
           <p className={styles.downloadContent}>
