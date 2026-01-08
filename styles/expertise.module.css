@@ -16,13 +16,13 @@
   border-radius: 12px;
   background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
   border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 6px 20px rgba(16,24,40,0.04);
+  box-shadow: 0 6px 20px rgba(19, 40, 16, 0.04);
   transition: transform .18s ease, box-shadow .18s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(16,24,40,0.08);
+  box-shadow: 0 12px 30px rgba(23, 40, 16, 0.08);
 }
 
 /* hide icon if you only want text */
@@ -33,13 +33,13 @@
   margin: 0 0 0.5rem 0;
   font-size: 1.05rem;
   font-weight: 700;
-  color: #2e7a20; /* modern dark */
+  color: #465144; /* modern dark */
 }
 
 /* Text fills remaining space */
 .text {
   margin: 0;
-  color: #3ac12b;
+  color: #577454;
   font-size: 0.98rem;
   line-height: 1.45;
   flex: 1; /* fill the card space */
