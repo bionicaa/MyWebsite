@@ -3,6 +3,7 @@ import styles from "../styles/app.module.css";
 import Base from './base.jsx';
 import Link from 'next/link';
 import Image from 'next/image';
+import Expertise from './expertise.jsx';
 
 // This is the home page of the application
 function HomePage() {
@@ -32,6 +33,13 @@ function HomePage() {
             Additionally, I can help with change management, automating operations and improving team engagement & output velocity through the use of modern tools and methodologies. <br />
             <br />
             <br />
+            <Expertise
+              items={[
+                 { slug: 'product-1', title: 'Product', text: 'Product design & strategy', icon: '/images/icon-product.svg' },
+                 { slug: 'ai-1', title: 'AI', text: 'AI-driven product development', icon: '/images/icon-ai.svg' },
+                 { slug: 'agile-1', title: 'Agile', text: 'Agile delivery & coaching', icon: '/images/icon-agile.svg' },
+                ]}
+            />
           </p>
           {/*<h2>
             <strong>But that&apos;s not all I do...</strong>
