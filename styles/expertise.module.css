@@ -22,7 +22,7 @@
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(23, 40, 16, 0.08);
+  box-shadow: 0 12px 30px rgba(33, 58, 23, 0.332);
 }
 
 /* hide icon if you only want text */
@@ -33,13 +33,13 @@
   margin: 0 0 0.5rem 0;
   font-size: 1.05rem;
   font-weight: 700;
-  color: #465144; /* modern dark */
+  color: #c1d2be; /* modern dark */
 }
 
 /* Text fills remaining space */
 .text {
   margin: 0;
-  color: #577454;
+  color: #a8dba2;
   font-size: 0.98rem;
   line-height: 1.45;
   flex: 1; /* fill the card space */
