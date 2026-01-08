@@ -4,6 +4,7 @@ import Base from './base.jsx';
 import Link from 'next/link';
 import Image from 'next/image';
 import Expertise from './expertise.jsx';
+import stylesExpertise from '../styles/expertise.module.css';
 
 // This is the home page of the application
 function HomePage() {
@@ -35,10 +36,22 @@ function HomePage() {
             <br />
             <Expertise
               items={[
-                 { slug: 'product-1', title: 'Product', text: 'Product design & strategy', icon: '/images/icon-product.svg' },
-                 { slug: 'ai-1', title: 'AI', text: 'AI-driven product development', icon: '/images/icon-ai.svg' },
-                 { slug: 'agile-1', title: 'Agile', text: 'Agile delivery & coaching', icon: '/images/icon-agile.svg' },
-                ]}
+                { 
+                  slug: 'product-1', 
+                  title: 'Product', 
+                  text: <>Lead <span className={stylesExpertise.highlight}>product strategy</span> and manage roadmap execution <span className={stylesExpertise.highlight}>value delivery</span>.</>
+                },
+                { 
+                  slug: 'ai-1', 
+                  title: 'AI', 
+                  text: <>Leverage <span className={stylesExpertise.highlight}>AI technologies</span> to build intelligent products and improve development pipelines.</>
+                },
+                { 
+                  slug: 'agile-1', 
+                  title: 'Agile', 
+                  text: <>Coachine teams to <span className={stylesExpertise.highlight}>deliver fast using agile methods</span> with sustainable velocity.</>
+                }
+              ]}
             />
           </p>
           {/*<h2>

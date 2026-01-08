@@ -4,33 +4,60 @@
   flex-wrap: wrap;
   margin-top: 1.25rem;
 }
+
 .card {
-  flex: 1 1 240px;
-  min-width: 200px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.06);
-  padding: 1rem;
+  flex: 1 1 280px;
+  min-width: 220px;
+  height: 220px; /* card fills vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centre text vertically */
+  padding: 1.25rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 20px rgba(16,24,40,0.04);
+  transition: transform .18s ease, box-shadow .18s ease;
 }
-.icon img {
-  width: 48px;
-  height: 48px;
-  display: block;
-  margin-bottom: 0.5rem;
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(16,24,40,0.08);
 }
+
+/* hide icon if you only want text */
+.icon { display: none; }
+
+/* Title styling */
 .title {
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.5rem 0;
   font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a; /* modern dark */
 }
+
+/* Text fills remaining space */
 .text {
   margin: 0;
-  color: rgba(255,255,255,0.85);
-  font-size: 0.95rem;
+  color: #334155;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  flex: 1; /* fill the card space */
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* optional clamp for long text */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
+/* Highlighted words */
+.highlight {
+  color: #0ea5a4; /* teal accent, change as you like */
+  font-weight: 700;
+}
+
+/* Responsive: stack */
 @media (max-width: 640px) {
   .grid { gap: 0.75rem; }
-  .card { flex-basis: 100%; }
+  .card { flex-basis: 100%; height: auto; }
 }
