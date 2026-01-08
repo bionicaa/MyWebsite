@@ -39,17 +39,17 @@ function HomePage() {
                 { 
                   slug: 'product-1', 
                   title: 'Product', 
-                  text: <>Lead <span className={stylesExpertise.highlight}>product strategy</span> and manage roadmap execution <span className={stylesExpertise.highlight}>value delivery</span>.</>
+                  text: <>Lead <span className={stylesExpertise.highlight}>product strategy</span> and manage roadmap execution to maximise <span className={stylesExpertise.highlight}>value delivery</span>.</>
                 },
                 { 
                   slug: 'ai-1', 
                   title: 'AI', 
-                  text: <>Leverage <span className={stylesExpertise.highlight}>AI technologies</span> to build intelligent products and improve development pipelines.</>
+                  text: <>Leverage <span className={stylesExpertise.highlight}>cutting edge technologies</span> to build intelligent products and <span className={stylesExpertise.highlight}>automate development pipelines</span>.</>
                 },
                 { 
                   slug: 'agile-1', 
                   title: 'Agile', 
-                  text: <>Coachine teams to <span className={stylesExpertise.highlight}>deliver fast using agile methods</span> with sustainable velocity.</>
+                  text: <>Coachine teams to collaboratively <span className={stylesExpertise.highlight}>deliver fast</span> with sustainable velocity.</>
                 }
               ]}
             />

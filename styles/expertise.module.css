@@ -33,13 +33,13 @@
   margin: 0 0 0.5rem 0;
   font-size: 1.05rem;
   font-weight: 700;
-  color: #0f172a; /* modern dark */
+  color: #2e7a20; /* modern dark */
 }
 
 /* Text fills remaining space */
 .text {
   margin: 0;
-  color: #334155;
+  color: #3ac12b;
   font-size: 0.98rem;
   line-height: 1.45;
   flex: 1; /* fill the card space */
@@ -52,7 +52,7 @@
 
 /* Highlighted words */
 .highlight {
-  color: #0ea5a4; /* teal accent, change as you like */
+  color: #2be688; /* teal accent, change as you like */
   font-weight: 700;
 }
 
