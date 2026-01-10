@@ -5,6 +5,7 @@
     padding: 0.5rem;
     margin-right: 10rem;
     padding-right: 10rem;
+    padding-bottom: 20rem;
     color: rgba(256, 256, 256, 0.9);
     background-color: transparent;
 }
@@ -28,35 +29,22 @@
 }
 
 .downloadContent {
-    position: absolute;
+    position: fixed;
     top: 620px;
     left: 20px;
     right: 20px;
     bottom: 20px;
-    display: flex;
-    max-width: calc(100% - 40px);
-    box-sizing: border-box;
     padding: 0.5rem;
-    color: rgba(256, 256, 256, 0.9);
-    background-color: transparent;  
-    align-items: center;
-    flex-wrap: wrap;         /* allow text to wrap onto multiple lines */
-    z-index: 5;
-    word-break: break-word;
-    overflow-wrap: anywhere;
 }
 
 .downloadIcon {
-    display: inline-flex;
+    position: fixed;
+    top: 700px;
+    right: 30px;
     align-items: center;
-    margin-left: auto;       /* pushes icon to the right of the block */
+    margin-left: 250px;
+    cursor: pointer;
     transition: filter 200ms;
-}
-
-.downloadIcon img {
-    width: 30px;
-    height: 30px;
-    display: block;
 }
 
 .downloadIcon:hover img {
