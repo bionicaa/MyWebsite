@@ -1,12 +1,6 @@
 .container {
   margin-top: 2rem;
 }
-.heading {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #0f172a;
-}
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -46,7 +40,7 @@
 }
 .description {
   margin: 0.5rem 0;
-  color: #babec4;
+  color: #76e4b3;
   font-size: 0.98rem;
   line-height: 1.45;
   flex: 1;
@@ -57,7 +51,7 @@
   margin-top: 0.5rem;
 }
 .link {
-  color: #0ea5a4;
+  color: #09ef75;
   font-weight: 600;
   text-decoration: none;
 }

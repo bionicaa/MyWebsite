@@ -39,10 +39,9 @@
 
 .downloadIcon {
     position: fixed;
-    top: 700px;
+    top: 720px;
     right: 30px;
-    align-items: center;
-    margin-left: 250px;
+    margin-left: 20px;
     cursor: pointer;
     transition: filter 200ms;
 }

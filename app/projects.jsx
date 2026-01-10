@@ -14,7 +14,6 @@ export default function Projects({ projects = [] }) {
 
   return (
     <section className={styles.container} aria-label="Projects">
-      <h2 className={styles.heading}>Selected Projects</h2>
       <div className={styles.grid}>
         {projects.map((p, i) => (
           <article className={styles.card} key={p.slug ?? `proj-${i}`}>

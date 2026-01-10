@@ -85,7 +85,8 @@ function HomePage() {
         <div>
           <p className={styles.downloadContent}>
             Download my <Link className={styles.blogPost} href={`/CV_ABDI_Amin.pdf`} download>CV</Link> or <br />
-            visit the <Link className={styles.blogPost} href="/contact">Contact Page</Link> if you wish to work together.
+            visit the <Link className={styles.blogPost} href="/contact">Contact Page</Link> <br />
+            if you wish to work together.
             <a className={styles.downloadIcon} href={`/CV_ABDI_Amin.pdf`} download>
               <Image src={`/images/download.svg`} alt='CV' width={30} height={30} />
             </a>
