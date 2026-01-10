@@ -42,11 +42,11 @@
   margin: 0;
   font-size: 1.05rem;
   font-weight: 700;
-  color: #0f172a;
+  color: #e9ebee;
 }
 .description {
   margin: 0.5rem 0;
-  color: #334155;
+  color: #babec4;
   font-size: 0.98rem;
   line-height: 1.45;
   flex: 1;
@@ -65,7 +65,7 @@
   text-decoration: underline;
 }
 .highlight {
-  color: #0ea5a4;
+  color: #19cda9;
   font-weight: 700;
 }
 @media (max-width: 640px) {
