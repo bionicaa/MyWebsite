@@ -38,7 +38,8 @@
     box-sizing: border-box;
     padding: 0.5rem;
     color: rgba(256, 256, 256, 0.9);
-    background-color: transparent;
+    background-color: transparent;  
+    align-items: center;
     flex-wrap: wrap;         /* allow text to wrap onto multiple lines */
     z-index: 5;
     word-break: break-word;
@@ -50,6 +51,12 @@
     align-items: center;
     margin-left: auto;       /* pushes icon to the right of the block */
     transition: filter 200ms;
+}
+
+.downloadIcon img {
+    width: 30px;
+    height: 30px;
+    display: block;
 }
 
 .downloadIcon:hover img {

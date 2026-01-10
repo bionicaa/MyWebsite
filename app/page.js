@@ -25,10 +25,13 @@ function HomePage() {
           <h1>
             <strong>A little about me...</strong>
           </h1>
+          <br />
           <p>
             Hi, my name is Amin Abdi <br />
+            <br />
             I am a <strong>technical product development specialist</strong> with expertise in <strong>software product management</strong> and <strong>agile project delivery</strong>. <br />
             Having worked in the tech industry for over 7 years under various frameworks, in both engineering and product, I want to share my skills and knowledge to help develop and deliver exciting products around the world. <br />
+            <br />
             I can help you strategise, plan and execute on your software product ideas, with knowledge of cutting edge technologies like AI, Cloud and Web technologies. <br />
             Additionally, I can help with change management, automating operations and improving team engagement & output velocity through the use of modern tools and methodologies like DevOps. <br />
             <Expertise
