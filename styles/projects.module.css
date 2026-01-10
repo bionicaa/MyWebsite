@@ -15,7 +15,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  background: linear-gradient(180deg, #ffffff38, #f8fafc5b);
   padding: 1rem;
   border-radius: 12px;
   min-height: 220px;

@@ -31,18 +31,23 @@
     position: fixed;
     top: 620px;
     left: 20px;
-    padding: 0.1rem;
+    right: 20px;
+    max-width: calc(100% - 40px);
+    box-sizing: border-box;
+    padding: 0.5rem;
     color: rgba(256, 256, 256, 0.9);
     background-color: transparent;
+    flex-wrap: wrap;         /* allow text to wrap onto multiple lines */
+    z-index: 5;
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 .downloadIcon {
-    position: fixed;
-    top: 620px;
-    left: 530px;
+    display: inline-flex;
     align-items: center;
-    transition: filter 2s;
-    display: flex;
+    margin-left: auto;       /* pushes icon to the right of the block */
+    transition: filter 200ms;
 }
 
 .downloadIcon:hover img {
