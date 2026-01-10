@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Expertise from './expertise.jsx';
 import stylesExpertise from '../styles/expertise.module.css';
+import Projects from './projects.jsx';
 
 // This is the home page of the application
 function HomePage() {
@@ -51,6 +52,23 @@ function HomePage() {
                   text: <>Coachine teams to collaboratively <span className={stylesExpertise.highlight}>deliver fast & efficiently</span>, maintaining consistent velocity and engagement levels. Fostering a transparent and courageous working environment that <span className={stylesExpertise.highlight}>blends leading frameworks</span> to continually improve and grow product teams.</>
                 }
               ]}
+            />
+            <br />
+            <Projects
+              projects={[
+              {
+                slug: 'mdt-1',
+                title: 'Software Deployment Automation Tool',
+              description: <>Researched market and conducted <span className={stylesExpertise.highlight}>product discovery</span> to present solutions and get buy-in from stakeholders. Led a team to deliver an <span className={stylesExpertise.highlight}>integrated prototype</span> following agile scrum and validated against success metrics. Introduced new feature that <span className={stylesExpertise.highlight}>reduced project timelines by weeks</span> and <span className={stylesExpertise.highlight}>increased customer satisfaction</span> as we were able to deliver more reliably.</>,
+              image: '/images/mdt.png'
+              },
+              {
+              slug: 'sky-1',
+              title: 'Sky Glass Accessibility Feature Expansion',
+              description: <>Worked with Sky Glass to improve their accessibility features on their Sky Glass Tv. After <span className={stylesExpertise.highlight}>user discovery and analysis</span>, I devoloped a prototype and conducted <span className={stylesExpertise.highlight}>A/B & Userability testing</span> to validate hypothesise and present final solution to managment for production sign off. The solution was set to <span className={stylesExpertise.highlight}>increase engagement by 22%</span> and <span className={stylesExpertise.highlight}>improve customer satisfaction by over 40%.</span>.</>,
+              image: '/images/skyglass.jpg'
+              }
+            ]}
             />
           </p>
           {/*<h2>
