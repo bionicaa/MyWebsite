@@ -31,25 +31,24 @@ function HomePage() {
             Having worked in the tech industry for over 7 years under various frameworks, in both engineering and product, I want to share my skills and knowledge to help develop and deliver exciting products around the world. <br />
             <br />
             I can help you strategise, plan and execute on your software product ideas, with knowledge of cutting edge technologies like AI, Cloud and Web technologies. <br />
-            Additionally, I can help with change management, automating operations and improving team engagement & output velocity through the use of modern tools and methodologies. <br />
-            <br />
+            Additionally, I can help with change management, automating operations and improving team engagement & output velocity through the use of modern tools and methodologies like DevOps. <br />
             <br />
             <Expertise
               items={[
                 { 
                   slug: 'product-1', 
                   title: 'Product', 
-                  text: <>Lead <span className={stylesExpertise.highlight}>product strategy</span> and manage roadmap execution to maximise <span className={stylesExpertise.highlight}>value delivery</span>.</>
+                  text: <>Lead <span className={stylesExpertise.highlight}>product strategy</span> and manage roadmap execution to maximise <span className={stylesExpertise.highlight}>value delivery</span>. Communicating <span className={stylesExpertise.highlight}>clear vision</span> to align teams towards <span className={stylesExpertise.highlight}>north star metrics</span>.</> 
                 },
                 { 
-                  slug: 'ai-1', 
-                  title: 'AI', 
-                  text: <>Leverage <span className={stylesExpertise.highlight}>cutting edge technologies</span> to build intelligent products and <span className={stylesExpertise.highlight}>automate development pipelines</span>.</>
+                  slug: 'analysis-1', 
+                  title: 'Analytics', 
+                  text: <>Leverage <span className={stylesExpertise.highlight}>data-driven</span> insights to build intelligent products and <span className={stylesExpertise.highlight}>automate development pipelines</span> to iterate successfully. Understand business & customer needs and translate them into actionable product requirements.</>
                 },
                 { 
                   slug: 'agile-1', 
                   title: 'Agile', 
-                  text: <>Coachine teams to collaboratively <span className={stylesExpertise.highlight}>deliver fast</span> with sustainable velocity.</>
+                  text: <>Coachine teams to collaboratively <span className={stylesExpertise.highlight}>deliver fast & efficiently</span>, maintaining consistent velocity and engagement levels. Fostering a transparent and courageous working environment that <span className={stylesExpertise.highlight}>blends leading frameworks</span> to continually improve and grow product teams.</>
                 }
               ]}
             />
