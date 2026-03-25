@@ -40,7 +40,7 @@
 }
 .description {
   margin: 0.5rem 0;
-  color: #a8dba2;
+  color: #f7fdf6;
   font-size: 0.98rem;
   line-height: 1.45;
   flex: 1;
@@ -59,7 +59,7 @@
   text-decoration: underline;
 }
 .highlight {
-  color: #2be688;
+  color: #98b5a6;
   font-weight: 700;
 }
 @media (max-width: 640px) {
