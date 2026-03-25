@@ -66,6 +66,12 @@ function HomePage() {
               title: 'Sky Glass Accessibility Feature Expansion',
               description: <>Worked with Sky Glass to improve their accessibility features on their Sky Glass Tv. After <span className={stylesExpertise.highlight}>user discovery and analysis</span>, I devoloped a prototype and conducted <span className={stylesExpertise.highlight}>A/B & Userability testing</span> to validate hypothesise and present final solution to managment for production sign off. The solution was set to <span className={stylesExpertise.highlight}>increase engagement by 22%</span> and <span className={stylesExpertise.highlight}>improve customer satisfaction by over 40%.</span>.</>,
               image: '/images/skyglass.jpg'
+              },
+              {
+                slug: 'pms-1',
+                title: 'Platform Management System',
+                description: <>Led the development & delivery of a naval platform managment system that enables maritime operations. Implemented <span className={stylesExpertise.highlight}>agile methodologies</span> and utilised <span className={stylesExpertise.highlight}>product management principles</span> to ensure timely delivery, system quality and stakeholder satisfaction. <span className={stylesExpertise.highlight}>Improved team productivity by 20%</span> and <span className={stylesExpertise.highlight}>increased system runtime reliability by 30%.</span></>,
+                image: '/images/NG_PMS.jpg'
               }
             ]}
             />

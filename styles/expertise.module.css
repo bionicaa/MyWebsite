@@ -39,7 +39,7 @@
 /* Text fills remaining space */
 .text {
   margin: 0;
-  color: #a8dba2;
+  color: #414341e5;
   font-size: 0.98rem;
   line-height: 1.45;
   flex: 1; /* fill the card space */
@@ -52,7 +52,7 @@
 
 /* Highlighted words */
 .highlight {
-  color: #2be688; /* teal accent, change as you like */
+  color: #181a19db; /* teal accent, change as you like */
   font-weight: 700;
 }
 
