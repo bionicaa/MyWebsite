@@ -9,7 +9,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #ffffff38, #f8fafc5b);
+  background: linear-gradient(180deg, #ffffff16, #f8fafc23);
   padding: 1rem;
   border-radius: 12px;
   min-height: 220px;
