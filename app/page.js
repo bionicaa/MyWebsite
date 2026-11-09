@@ -39,7 +39,7 @@ function HomePage() {
                 { 
                   slug: 'product-1', 
                   title: 'Product', 
-                  text: <>Lead <span className={stylesExpertise.highlight}>product strategy</span> and manage roadmap execution to maximise <span className={stylesExpertise.highlight}>value delivery</span>. Communicating <span className={stylesExpertise.highlight}>clear vision</span> to align teams towards <span className={stylesExpertise.highlight}>north star metrics</span>.</> 
+                  text: <>Lead <span className={stylesExpertise.highlight}>product strategy</span> and managed roadmap execution to maximise <span className={stylesExpertise.highlight}>value delivery</span>. Communicated <span className={stylesExpertise.highlight}>clear vision</span> to align teams towards <span className={stylesExpertise.highlight}>north star metrics</span>.</> 
                 },
                 { 
                   slug: 'analysis-1', 
@@ -49,7 +49,7 @@ function HomePage() {
                 { 
                   slug: 'agile-1', 
                   title: 'Agile', 
-                  text: <>Coachine teams to collaboratively <span className={stylesExpertise.highlight}>deliver fast & efficiently</span>, maintaining consistent velocity and engagement levels. Fostering a transparent and courageous working environment that <span className={stylesExpertise.highlight}>blends leading frameworks</span> to continually improve and grow product teams.</>
+                  text: <>Coaching teams to collaboratively <span className={stylesExpertise.highlight}>deliver fast & efficiently</span>, maintaining consistent velocity and engagement levels. Fostering a transparent and courageous working environment that <span className={stylesExpertise.highlight}>blends leading frameworks</span> to continually improve and grow product teams.</>
                 }
               ]}
             />
